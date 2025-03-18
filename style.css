@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1a1a1a;
+    color: #e1e1e1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #111;
+    padding: 15px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e1e1e1;
+    font-weight: 400;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #feda4a;
+}
+
+nav a.active {
+    font-weight: 700;
+    color: #feda4a;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 55px;
+    text-align: center;
+    background: url('background.jpg') center/cover no-repeat;
+}
+
+.welcome-text {
+    max-width: 500px;
+}
+
+.welcome h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #feda4a;
+}
+
+.welcome p {
+    margin-bottom: 20px;
+}
+
+.welcome-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #feda4a;
+    color: #1a1a1a;
+    font-weight: 700;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.welcome-button:hover {
+    background-color: #d4a100;
+}
+
+.our-services {
+    padding: 55px;
+    text-align: center;
+}
+
+.our-services-top h1 {
+    font-size: 28px;
+    color: #feda4a;
+    margin-bottom: 15px;
+}
+
+.our-services-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.serv-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.serv-card:hover {
+    transform: scale(1.05);
+}
+
+.serv-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.serv-card h3 {
+    font-size: 22px;
+    color: #feda4a;
+}
+
+.more-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    margin-top: 20px;
+    background-color: #feda4a;
+    color: #1a1a1a;
+    font-weight: 700;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.more-btn:hover {
+    background-color: #d4a100;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 55px;
+}
+
+.info img {
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+.info-text {
+    max-width: 450px;
+    margin-left: 20px;
+}
+
+.info h1 {
+    font-size: 28px;
+    color: #feda4a;
+    margin-bottom: 15px;
+}
+
+.info p {
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 55px;
+    background: linear-gradient(180deg, #1c1c1c 0%, #3a3a3a 80%, #0e0e0e);
+    color: #b0b0b0;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    border-top: 2px solid #555;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    text-indent: 10px;
+    margin-bottom: 30px;
+}
+
+.footer-logo img {
+    height: 40px;
+    margin-right: 15px;
+}
+
+.footer-left p {
+    margin: 10px 0;
+}
+
+.footer-right {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.footer-list {
+    padding: 10px;
+    margin: 10px;
+}
+
+.footer-list p {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.footer-list ul {
+    list-style: none;
+}
+
+.footer-list ul li a {
+    color: #fff;
+    display: block;
+    padding: 15px 20px;
+    padding-left: 0;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+}
+
+.footer-list ul li a:hover {
+    text-decoration: underline;
+}
+
+.welcome img, .info img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav a {
+        margin: 5px;
+    }
+    .welcome, .info {
+        flex-direction: column;
+    }
+    .info-text {
+        margin-left: 0;
+    }
+    .serv-card {
+        width: 100%;
+        max-width: 300px;
+    }
+    .footer-right {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .welcome, .our-services, .info, footer {
+        padding: 20px;
+    }
+    .welcome-button, .more-btn {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        margin: 5px 0;
+    }
+    .logo img {
+        height: 30px;
+    }
+}
